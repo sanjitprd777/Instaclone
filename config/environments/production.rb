@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin; C:\Program Files\ImageMagick-6.9.11-Q8'
+  Paperclip.options[:swallow_stderr] = false
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
