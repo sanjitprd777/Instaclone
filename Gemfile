@@ -51,3 +51,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'paperclip', '6.1.0'
 gem 'simple_form', '5.0.2'
+gem 'bootstrap-sass', '3.4.1'
+gem 'sassc-rails', '2.1.2'
+gem 'jquery-rails', '4.4.0'
+gem 'sprockets-rails', '3.2.1'
