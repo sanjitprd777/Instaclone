@@ -1,10 +1,6 @@
-<div data-controller="infinite-scroll" data-action="scroll@window->infinite-scroll#scroll">
-  <div data-target="infinite-scroll.entries">
-    <div class="posts-wrapper row">
-        <%= render 'post' %>
-    </div>
-  </div>
-  <div data-target="infinite-scroll.pagination">
-  <%= paginate @posts %>
-  </div>
+<div class="posts-wrapper row">
+    <%= render 'post' %>
+</div>
+</div>
+	<%= paginate @posts %>
 </div>
