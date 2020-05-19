@@ -2,3 +2,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.turbolinks
+//= require pagination
+//= require bind_with_delay
