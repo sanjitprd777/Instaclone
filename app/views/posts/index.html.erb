@@ -1,6 +1,7 @@
-<div class="posts-wrapper row">
-    <%= render 'post' %>
+<div id="posts">
+	<% @posts.each do |post| %>
+	  <%= render 'post', post: post %>
+	<% end %>
 </div>
-</div>
-	<%= paginate @posts %>
-</div>
+
+<%= will_paginate @posts %>

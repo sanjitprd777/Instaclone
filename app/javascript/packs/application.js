@@ -8,6 +8,28 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+    // require("jquery_ujs")
+
+//= require jquery3
+//= require jquery_ujs
+//= require_tree .
+
+$(document).ready(function() {
+    if ($('.pagination').length) {
+        $(window).scroll(function() {
+            var url = $('.pagination .next_page').attr('href');
+            if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 100) {
+                console.log("new page : ", url);
+                $('.pagination').text("Please Wait...");
+                return $.getScript(url);
+            }
+        });
+        return $(window).scroll();
+    }
+});
+
+// 2.3 .8
+// 5.1 .4
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
